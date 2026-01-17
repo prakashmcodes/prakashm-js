@@ -1,0 +1,21 @@
+import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineConfig({
+  base: "./",
+  build: {
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        dom: "dom.html",
+        others: "others.html",
+        greet: "dom-tasks/greet/greet.html",
+        greetcolor: "dom-tasks/greet-col/greetcolor.html",
+        statenav: "dom-tasks/state-nav/statenav.html",
+        usermanager: "dom-tasks/user-manager/um.html",
+        productlist: "dom-tasks/product-list/pl.html"
+      },
+    },
+  },
+  plugins: [tailwindcss()],
+});

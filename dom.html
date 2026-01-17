@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>prakashm-js</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body class="pt-24">
+    <nav
+        class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-lg flex justify-between items-center px-6 border-b border-gray-200 shadow-lg z-5 rounded-xl">
+        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+            <img src="Prakash_IMG.jpg" class="w-8 md:w-12 md:h-12 rounded-full object-cover ring-2 ring-blue-400"
+                alt="Prakash M" title="Prakash M">
+        </a>
+        <section class="flex justify-center">
+        <ul
+            class="flex justify-center items-center gap-x-4 sm:gap-x-24 md:text-2xl p-3 sm:p-2 font-medium sm:text-xl border border-gray-300 m-3 sm:m-4 md:font-bold rounded-2xl text-blue-600 bg-white/70 backdrop-blur shadow-md">
+            <li class="bg-blue-100 hover:bg-blue-200 p-2 px-4 rounded-lg transition-all duration-300 hover:scale-105">
+                <a href="dom.html">CDN-DOM Tasks</a>
+            </li>
+            <!-- <li class="bg-gray-200 hover:bg-gray-300 p-1 rounded-md">
+        <a href="index.html">All Tasks</a>
+      </li> -->
+            <li class="bg-blue-100 hover:bg-blue-200 p-2 px-4 rounded-lg transition-all duration-300 hover:scale-105">
+                <a href="others.html">Others</a>
+            </li>
+        </ul>
+    </section>
+        <ul id="navigation" class="flex justify-evenly gap-x-7 pr-2 text-2xl font-semibold text-gray-700">
+            <!-- <li><a href="about.html" class="nav-a hover:underline">About</a></li>
+      <li><a href="contact.html" class="nav-a hover:underline">Contact</a></li> -->
+      
+            <li>
+                <a href="https://github.com/prakashmcodes"
+                    class="nav-a hover:text-black transition-colors duration-300 flex items-center">
+                    <i data-lucide="github"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    
+
+
+    <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-8 pt-24">
+
+        <!-- Card 1 -->
+        <div
+            class="bg-linear-to-br from-pink-500 to-rose-500 text-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+            <div class="flex items-center justify-between mb-4">
+                <i data-lucide="smile" class="w-8 h-8"></i>
+                <span class="text-sm bg-white/20 px-3 py-1 rounded-full">12/01/2026</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-3">Greet App</h2>
+            <a href="/dom-tasks/greet/greet.html"
+                class="inline-flex items-center gap-2 bg-white text-pink-600 px-4 py-2 rounded-lg font-semibold">
+                View Project <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+            class="bg-linear-to-br from-pink-500 to-rose-500 text-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+            <div class="flex items-center justify-between mb-4">
+                <i data-lucide="palette" class="w-8 h-8"></i>
+                <span class="text-sm bg-white/20 px-3 py-1 rounded-full">12/01/2026</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-3">Color Changer</h2>
+            <a href="/dom-tasks/greet-col/greetcolor.html"
+                class="inline-flex items-center gap-2 bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold">
+                View Project <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+
+
+        <div
+            class="bg-linear-to-br from-gray-600 to-blue-800 text-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+            <div class="flex items-center justify-between mb-4">
+                <i data-lucide="navigation" class="w-8 h-8"></i>
+                <span class="text-sm bg-white/20 px-3 py-1 rounded-full">06/01/2026</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-3">State Changer</h2>
+            <a href="/dom-tasks/state-nav/statenav.html"
+                class="inline-flex items-center gap-2 bg-white text-violet-800 px-4 py-2 rounded-lg font-semibold">
+                View Project <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+
+
+        <div
+            class="bg-linear-to-br from-gray-600 to-blue-800 text-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+            <div class="flex items-center justify-between mb-4">
+                <i data-lucide="user" class="w-8 h-8"></i>
+                <span class="text-sm bg-white/20 px-3 py-1 rounded-full">05/01/2026</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-3">Dynamic User Manager</h2>
+            <a href="/dom-tasks/user-manager/um.html"
+                class="inline-flex items-center gap-2 bg-white text-gray-600 px-4 py-2 rounded-lg font-semibold">
+                View Project <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+
+
+        <div
+            class="bg-linear-to-br from-gray-600 to-blue-800 text-white p-6 rounded-2xl shadow-lg hover:scale-105 transition">
+            <div class="flex items-center justify-between mb-4">
+                <i data-lucide="list" class="w-8 h-8"></i>
+                <span class="text-sm bg-white/20 px-3 py-1 rounded-full">04/01/2026</span>
+            </div>
+            <h2 class="text-2xl font-bold mb-3">Fragment <br> Product List</h2>
+            <a href="/dom-tasks/product-list/pl.html"
+                class="inline-flex items-center gap-2 bg-white text-cyan-600 px-4 py-2 rounded-lg font-semibold">
+                View Project <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+
+    </main>
+
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+
+    <script src="/main.js"></script>
+</body>
+
+</html>

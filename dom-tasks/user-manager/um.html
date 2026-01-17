@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./um.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic User Manager</title>
+  </head>
+  <body class="bg-linear-to-r from-[#26649b] to-[#062768]">
+    <header class="flex items-center justify-center m-6"><div>
+      <h1 class="text-white text-4xl font-bold">User Manager</h1>
+    </div></header>
+    
+    <section class="mt-6 flex flex-col items-center justify-center  gap-y-4">
+ <div class="w-md p-20 bg-white shadow-lg rounded-lg flex flex-col justify-center items-center gap-y-8">
+   <input class="outline outline-gray-600/40 rounded p-1 py-2 w-80" placeholder="Enter Your Name" type="text" name="" id="name-input">
+   <input class="outline outline-gray-600/40 rounded p-1 py-2 w-80" placeholder="Enter Your Role" type="text" name="" id="role-input">
+   <button class="bg-[#10a8ea] text-white p-2 px-4 w-full font-semibold rounded-full cursor-pointer hover:bg-[#26649b]" id="enter-button">Enter</button>
+  </div>
+  
+  <div id="cards-container" class="w-full max-w-xl"></div>
+   
+  </div>
+</section>
+
+    <script type="module" src="./um.js"></script>
+  </body>
+</html>

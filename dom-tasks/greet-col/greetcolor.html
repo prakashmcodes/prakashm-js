@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Greet Col | Colorful Greeting App with Random Colors</title>
+  <meta name="description"
+    content="Greet Col is a colorful greeting web app that welcomes users with random background colors, light & dark themes, and stylish name highlights. Built using HTML, Tailwind CSS, and JavaScript." />
+  <meta name="keywords"
+    content="greeting app, colorful greeting, random background color, name greeting app, javascript project, tailwind css project, frontend mini project, greet user app" />
+  <meta name="author" content="Prakash M" />
+  <meta name="robots" content="index, follow" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+
+  <meta property="og:title" content="Greet Col | Colorful Greeting App" />
+  <meta property="og:description"
+    content="A beautiful greeting app that welcomes users with animated colors, dark/light mode, and stylish UI." />
+  <meta property="og:image" content="/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-site-url.com" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Greet Col | Colorful Greeting App" />
+  <meta name="twitter:description" content="Enter your name and get greeted with random vibrant colors and themes!" />
+  <meta name="twitter:image" content="/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./greetcolor.css" />
+
+  <meta name="theme-color" content="#000000" />
+
+  <meta name="application-name" content="Greet Col" />
+  <meta name="apple-mobile-web-app-title" content="Greet Col" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+
+
+<body class="bg-black" id="bodycol">
+
+  <main class="h-screen flex items-center justify-center">
+    <section class="mt-6 flex flex-col items-center justify-center gap-y-4">
+
+      <div class="card-container w-[90%] p-6 gap-y-4 sm:w-[80%] sm:p-10 sm:gap-y-6 lg:w-xl lg:p-20 lg:gap-y-8 
+        bg-gray-700 shadow-2xl rounded-lg flex flex-col justify-center items-center">
+      
+        <div id="input-section" class="w-full flex flex-col gap-y-4">
+          <h1 class="font-bold text-3xl text-white text-center">What's Your Name?</h1>
+          <input class="outline outline-gray-600/80 rounded p-1 py-2 w-full bg-gray-200 text-black pl-2 capitalize"
+            placeholder="Enter Your Name" type="text" id="name-input" />
+          <p class="text-red-500 bg-gray-600 font-medium hidden text-center p-2 rounded" id="alert-p"></p>
+          <button
+            class="bg-[#3dd87d] text-gray-800 p-2 px-4 w-full font-semibold rounded-full cursor-pointer hover:bg-[#0aa73c] transition-all"
+            id="enter-button">Enter</button>
+        </div>
+
+        
+        <div id="greeting-section" class="w-full hidden flex-col items-center gap-y-6">
+          <h2 id="greet-text" class="text-center text-3xl text-white font-semibold capitalize">
+          </h2>
+
+          <div class="flex gap-x-4 flex-wrap justify-center">
+            <button id="random-theme"
+              class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all hover:scale-105 flex items-center gap-2 cursor-pointer">
+              Random
+            </button>
+
+            <button id="reset-button"
+              class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition-all hover:scale-105 flex items-center gap-2 cursor-pointer">
+              Reset
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+    <script type="module" src="./greetcolor.js"></script>
+</body>
+
+</html>

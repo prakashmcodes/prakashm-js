@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+
+  <title>Greet Ace | Greeting With Your Name</title>
+  <meta name="description"
+    content="Greet Ace is a greeting web app that welcomes users, Built using HTML, Tailwind CSS, and JavaScript." />
+  <meta name="keywords"
+    content="greeting app, colorful greeting, random background color, name greeting app, javascript project, tailwind css project, frontend mini project, greet user app" />
+  <meta name="author" content="Prakash M" />
+  <meta name="robots" content="index, follow" />
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:title" content="Greet Ace Greeting App" />
+  <meta property="og:description" content="A  greeting app that welcomes users." />
+  <meta property="og:image" content="/favicon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-site-url.com" />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Greet Ace | Colorful Greeting App" />
+  <meta name="twitter:description" content="Enter your name and get greeted with random vibrant colors and themes!" />
+  <meta name="twitter:image" content="/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./greet.css" />
+
+  <meta name="theme-color" content="#000000" />
+
+  <meta name="application-name" content="Greet Col" />
+  <meta name="apple-mobile-web-app-title" content="Greet Ace" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+
+
+<body class="bg-linear-to-r from-[#d9e6f2] to-[#bbcce9]">
+
+   <main class="h-screen flex items-center justify-center">
+    
+    <!-- Input Section -->
+    <section id="input-section" class="w-full max-w-md flex flex-col items-center justify-center gap-y-8">
+      <div class="w-full p-20 bg-[#f8f8f8] shadow-2xl rounded-lg flex flex-col justify-center items-center gap-y-8">
+        <h1 class="font-bold text-3xl">What's Your Name?</h1>
+        <input 
+          class="outline outline-gray-600/40 rounded p-1 py-2 w-full bg-gray-200 text-black pl-2 capitalize" 
+          placeholder="Enter Your Name" 
+          type="text" 
+          id="name-input">
+        <button 
+          class="bg-[#3dd87d] text-white p-2 px-4 w-full font-semibold rounded-full cursor-pointer hover:bg-[#0aa73c]" 
+          id="enter-button">
+          Enter
+        </button>
+      </div>
+    </section>
+
+    <!-- Greeting Section -->
+    <section id="greeting-section" class="hidden w-full max-w-md flex flex-col items-center justify-center gap-y-8">
+      <div class="w-full p-20 bg-[#f8f8f8] shadow-2xl rounded-lg flex flex-col justify-center items-center gap-y-8">
+        <h2 id="greet-text" class="text-center text-2xl bg-gradient-to-b from-cyan-600 to-blue-600 bg-clip-text text-transparent font-semibold capitalize">
+        </h2>
+        <button 
+          class="bg-red-500 text-white p-2 px-4 w-full font-semibold rounded-full cursor-pointer hover:bg-red-600" 
+          id="reset-button">
+          Reset
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+    <script type="module" src="./greet.js"></script>
+</body>
+
+</html>
