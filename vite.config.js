@@ -13,7 +13,9 @@ export default defineConfig({
         greetcolor: "dom-tasks/greet-col/greetcolor.html",
         statenav: "dom-tasks/state-nav/statenav.html",
         usermanager: "dom-tasks/user-manager/um.html",
-        productlist: "dom-tasks/product-list/pl.html"
+        productlist: "dom-tasks/product-list/pl.html",
+        textformatter: "dom-tasks/text-formatter/textformatter.html",
+        passwordtoggler: "dom-tasks/password-toggle/password-toggler.html",
       },
     },
   },
