@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bulletpoints.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Text Formatter</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-linear-to-br  from-[#220330] to-[#000000] text-white flex items-center justify-center">
+    
+    <div class="flex">
+        <a href="/dom.html">
+        <i data-lucide="arrow-left" class="absolute left-10 top-6 w-8 h-8 bg-indigo-600 rounded-full hover:text-gray-300"></i>
+    </a>
+    <a href="/">
+        <i data-lucide="home" class="absolute left-24 top-6 w-8 h-8 bg-green-600 rounded hover:text-gray-300"></i>
+    </a>
+    </div>
+
+    <div
+        class="flex p-8 w-9/12 md:w-1/2 py-36 md:py-56 bg-[#4e22d2] rounded-2xl flex-col gap-y-6 items-center justify-center text-[#FFFFFF]">
+        <input id="itemInput" type="text" class="outline-2 outline-gray-300 p-2 rounded w-full bg-white/90 text-black text-xl border border-gray-300" name="" id="">
+        <button id="addBtn" class="bg-green-500 w-fit rounded p-1 font-semibold text-xl text-black cursor-pointer">Add Item</button>
+        <ul id="list"></ul>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script type="module" src="./bulletpoints.js"></script>
+</body>
+
+</html>
