@@ -26,13 +26,46 @@
 
     <div
         class="flex flex-col p-8 w-9/12 md:w-1/2 py-36 md:py-56 bg-[#24115b] rounded-2xl gap-y-6 items-center justify-center text-[#FFFFFF]">
-       <h1 class="text-2xl font-black" id="count">0</h1>
+       <h1 
+  id="count"
+  class="text-8xl font-black 
+         drop-shadow-lg 
+         transition-colors duration-300">
+  0
+</h1>
 
-<div class="flex gap-x-6 items-center">
-    <button class="text-2xl cursor-pointer" id="inc">+</button>
-<button class="text-2xl cursor-pointer" id="dec">-</button>
-<button class="text-2xl bg-blue-400 text-black p-1 rounded-4xl cursor-pointer" id="reset">Reset</button>
+
+<div class="flex gap-x-6 items-center justify-center">
+  <button 
+    id="inc"
+    class="w-16 h-16 flex items-center justify-center 
+           text-4xl font-bold rounded-full 
+           bg-green-500 text-black 
+           shadow-lg shadow-green-500/40
+           hover:scale-110 active:scale-95 transition cursor-pointer">
+    +
+  </button>
+
+  <button 
+    id="dec"
+    class="w-16 h-16 flex items-center justify-center 
+           text-4xl font-bold rounded-full 
+           bg-red-500 text-black 
+           shadow-lg shadow-red-500/40
+           hover:scale-110 active:scale-95 transition cursor-pointer">
+    −
+  </button>
+
+  <button 
+    id="reset"
+    class="px-6 py-2 text-lg font-semibold 
+           bg-blue-400 text-black 
+           rounded-xl shadow-lg shadow-blue-400/40
+           hover:scale-105 active:scale-95 transition cursor-pointer">
+    Reset
+  </button>
 </div>
+
 
     </div>
 
