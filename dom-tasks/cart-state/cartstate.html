@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cartstate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Text Formatter</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-linear-to-br  from-[#220330] to-[#000000] text-white flex items-center justify-center">
+    
+    <div class="flex">
+        <a href="/dom.html">
+        <i data-lucide="arrow-left" class="absolute left-10 top-6 w-8 h-8 bg-indigo-600 rounded-full hover:text-gray-300"></i>
+    </a>
+    <a href="/">
+        <i data-lucide="home" class="absolute left-24 top-6 w-8 h-8 bg-green-600 rounded hover:text-gray-300"></i>
+    </a>
+    </div>
+
+    <div
+        class="flex flex-col p-8 w-9/12 md:w-1/2 py-36 md:py-56 bg-[#24115b] rounded-2xl gap-y-6 items-center justify-center text-[#FFFFFF]">
+       <h1 class="text-2xl font-black" id="count">0</h1>
+
+<div class="flex gap-x-6 items-center">
+    <button class="text-2xl cursor-pointer" id="inc">+</button>
+<button class="text-2xl cursor-pointer" id="dec">-</button>
+<button class="text-2xl bg-blue-400 text-black p-1 rounded-4xl cursor-pointer" id="reset">Reset</button>
+</div>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script type="module" src="./cartstate.js"></script>
+</body>
+
+</html>
