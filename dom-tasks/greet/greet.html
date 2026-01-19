@@ -40,10 +40,20 @@
   <meta name="application-name" content="Greet Col" />
   <meta name="apple-mobile-web-app-title" content="Greet Ace" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 
 <body class="bg-linear-to-r from-[#d9e6f2] to-[#bbcce9]">
+
+  <div class="flex">
+        <a href="/dom.html">
+        <i data-lucide="arrow-left" class="absolute text-white left-10 top-6 w-8 h-8 bg-indigo-600 rounded-full hover:text-gray-300"></i>
+    </a>
+    <a href="/">
+        <i data-lucide="home" class="absolute text-white left-24 top-6 w-8 h-8 bg-green-600 rounded hover:text-gray-300"></i>
+    </a>
+    </div>
 
    <main class="h-screen flex items-center justify-center">
     
@@ -78,6 +88,10 @@
     </section>
 
   </main>
+
+  <script>
+        lucide.createIcons();
+    </script>
 
     <script type="module" src="./greet.js"></script>
 </body>
