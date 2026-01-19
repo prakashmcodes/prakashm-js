@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./textformatter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Text Formatter</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-linear-to-br  from-[#1e1f65] to-[#000000] text-white flex items-center justify-center">
+    
+    <div class="flex">
+        <a href="/dom.html">
+        <i data-lucide="arrow-left" class="absolute left-10 top-6 w-8 h-8 bg-indigo-600 rounded-full hover:text-gray-300"></i>
+    </a>
+    <a href="/">
+        <i data-lucide="home" class="absolute left-24 top-6 w-8 h-8 bg-green-600 rounded hover:text-gray-300"></i>
+    </a>
+    </div>
+
+    <div
+        class="flex p-8 w-9/12 md:w-1/2 py-24 md:py-48 bg-linear-to-br from-blue-800 to-blue-950 rounded-2xl items-center justify-center flex-col gap-y-6">
+        <!-- <p class="hidden" id="uc-icon"><i data-lucide="case-upper"></i></p>
+        <i data-lucide="case-lower" id="lc-icon" class="hidden"></i> -->
+        <img src="./uppercase.jpeg" id="uc-icon" alt="UpperCase"
+            class="w-16 rounded-full shadow-lg hover:scale-105 transition hidden">
+        <img src="./lowercase.jpeg" id="lc-icon" alt="LowerCase"
+            class="w-16 rounded-full shadow-lg hover:scale-105 transition hidden">
+        <div class="w-full md:w-9/12 flex relative justify-end items-center gap-x-5">
+            <img src="https://cdn-icons-gif.flaticon.com/18255/18255111.gif" alt="typing " title="typing " width="64" height="64" srcset="https://cdn-icons-gif.flaticon.com/18255/18255111.gif" class="rounded-full cursor-pointer hover:shadow-2xl hover:shadow-gray-400 hover:rounded-full" id="typing-icon">
+            <textarea class="origin-center bg-white w-full text-black font-semibold rounded-xl pl-6" name="" id="textarea"
+                placeholder="Type Anything..."></textarea>
+                <i class="absolute text-black mr-6  hover:text-gray-500 cursor-pointer" id="dice" data-lucide="dices"></i>
+                
+        </div>
+        <div class="space-x-1 not-sm:flex not-sm:flex-col not-sm:gap-y-5 flex justify-center items-center">
+            <button class="bg-[#39eade] hover:bg-[#17bcb1] p-3 text-gray-800 uppercase rounded-full cursor-pointer font-semibold flex items-center"
+                id="ucbtn"><i data-lucide="arrow-up"></i> Upper Case</button>
+            <button class="bg-purple-400 hover:bg-purple-500 p-3 text-gray-800 lowercase rounded-full cursor-pointer font-semibold flex items-center
+            "
+                id="lcbtn"><i data-lucide="arrow-down"></i>lower case</button>
+            <button class="hover:bg-rose-500 p-3 text-gray-200 rounded-full cursor-pointer font-semibold"
+                id="resetbtn">Reset</button>
+        </div>
+        <p id="err" class="text-red-500 font-medium hidden">*Please Enter Something in input</p>
+        <p id="text" class="hidden text-2xl font-bold bg-gray-200 text-black rounded "></p>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script type="module" src="./textformatter.js"></script>
+</body>
+
+</html>
