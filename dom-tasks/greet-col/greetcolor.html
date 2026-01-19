@@ -33,7 +33,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./greetcolor.css" />
 
@@ -42,17 +43,27 @@
   <meta name="application-name" content="Greet Col" />
   <meta name="apple-mobile-web-app-title" content="Greet Col" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 
 <body class="bg-black" id="bodycol">
+
+  <div class="flex">
+        <a href="/dom.html">
+        <i data-lucide="arrow-left" class="absolute text-white left-10 top-6 w-8 h-8 bg-indigo-600 rounded-full hover:text-gray-300"></i>
+    </a>
+    <a href="/">
+        <i data-lucide="home" class="absolute text-white left-24 top-6 w-8 h-8 bg-green-600 rounded hover:text-gray-300"></i>
+    </a>
+    </div>
 
   <main class="h-screen flex items-center justify-center">
     <section class="mt-6 flex flex-col items-center justify-center gap-y-4">
 
       <div class="card-container w-[90%] p-6 gap-y-4 sm:w-[80%] sm:p-10 sm:gap-y-6 lg:w-xl lg:p-20 lg:gap-y-8 
         bg-gray-700 shadow-2xl rounded-lg flex flex-col justify-center items-center">
-      
+
         <div id="input-section" class="w-full flex flex-col gap-y-4">
           <h1 class="font-bold text-3xl text-white text-center">What's Your Name?</h1>
           <input class="outline outline-gray-600/80 rounded p-1 py-2 w-full bg-gray-200 text-black pl-2 capitalize"
@@ -63,7 +74,7 @@
             id="enter-button">Enter</button>
         </div>
 
-        
+
         <div id="greeting-section" class="w-full hidden flex-col items-center gap-y-6">
           <h2 id="greet-text" class="text-center text-3xl text-white font-semibold capitalize">
           </h2>
@@ -85,7 +96,11 @@
     </section>
   </main>
 
-    <script type="module" src="./greetcolor.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <script type="module" src="./greetcolor.js"></script>
 </body>
 
 </html>
