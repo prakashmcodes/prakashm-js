@@ -1,7 +1,7 @@
 const cartList = document.getElementById("cartList");
 const countEl = document.getElementById("count");
 const addButtons = document.querySelectorAll(".add-btn");
-const clearAllBtn = document.getElementById("clearall")
+const clearAllBtn = document.getElementById("clearall");
 
 let count = 0;
 
@@ -22,13 +22,9 @@ addButtons.forEach(btn => {
     removeBtn.addEventListener("click", () => {
       li.remove();
       count--;
+      updateCount();
     });
 
-    clearAllBtn.addEventListener("click", () => {
-  cartList.innerHTML = "";
-  count = 0;
-  updateCount();
-});
     li.appendChild(span);
     li.appendChild(removeBtn);
     cartList.appendChild(li);
@@ -37,6 +33,14 @@ addButtons.forEach(btn => {
     updateCount();
   });
 });
+
+
+clearAllBtn.addEventListener("click", () => {
+  cartList.innerHTML = "";
+  count = 0;
+  updateCount();
+});
+
 
 function updateCount() {
   countEl.textContent = count;
