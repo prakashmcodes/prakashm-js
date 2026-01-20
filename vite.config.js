@@ -18,6 +18,7 @@ export default defineConfig({
         passwordtoggler: "dom-tasks/password-toggle/password-toggler.html",
         bullerpoints: "dom-tasks/bullet-points/bulletpoints.html",
         cartstate: "dom-tasks/cart-state/cartstate.html",
+        charcount: "dom-tasks/count-characters/charactercount.html",
       },
     },
   },

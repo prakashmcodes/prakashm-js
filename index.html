@@ -3,6 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
+  
+
+    <script>
+      tailwind = {
+        darkMode: 'class'
+      }
+    </script>
   <link rel="stylesheet" href="/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,59 +17,67 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
+
   <script src="https://unpkg.com/lucide@latest"></script>
   <title>prakashm-js || DOM Tasks in CyberDude Live Internship 2025-2026</title>
 </head>
 
-<body class="min-h-screen pt-24 bg-linear-to-br from-blue-500 to-cyan-600">
+<body class="min-h-screen pt-24 
+  bg-linear-to-br from-blue-500 to-cyan-600
+  dark:bg-linear-to-br dark:from-gray-900 dark:to-black">
+
+
 
   <nav
-        class="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-lg flex justify-between items-center px-6 border-b border-gray-200 shadow-lg z-5 rounded-xl">
-        <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
-            <img src="Prakash_IMG.jpg" class="w-8 md:w-12 md:h-12 rounded-full object-cover ring-2 ring-blue-400"
-                alt="Prakash M" title="Prakash M">
-        </a>
-        <section class="flex justify-center">
-        <ul
-            class="flex justify-center items-center gap-x-4 sm:gap-x-24 md:text-2xl p-3 sm:p-2 font-medium sm:text-xl border border-gray-300 m-3 sm:m-4 md:font-bold rounded-2xl text-blue-600 bg-white/70 backdrop-blur shadow-md">
-            <li class="bg-blue-100 hover:bg-blue-200 p-2 px-4 rounded-lg transition-all duration-300 hover:scale-105">
-                <a href="dom.html">CDN-DOM Tasks</a>
-            </li>
-            <!-- <li class="bg-gray-200 hover:bg-gray-300 p-1 rounded-md">
+    class="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-lg flex justify-between items-center px-6 border-b border-gray-200 shadow-lg z-5 rounded-xl">
+    <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+      <img src="Prakash_IMG.jpg" class="w-8 md:w-12 md:h-12 rounded-full object-cover ring-2 ring-blue-400"
+        alt="Prakash M" title="Prakash M">
+    </a>
+    <section class="flex justify-center">
+      <ul
+        class="flex justify-center items-center gap-x-4 sm:gap-x-24 md:text-2xl p-3 sm:p-2 font-medium sm:text-xl border border-gray-300 m-3 sm:m-4 md:font-bold rounded-2xl text-blue-600 bg-white/70 backdrop-blur shadow-md">
+        <li class="bg-blue-100 hover:bg-blue-200 p-2 px-4 rounded-lg transition-all duration-300 hover:scale-105">
+          <a href="dom.html">CDN-DOM Tasks</a>
+        </li>
+        <!-- <li class="bg-gray-200 hover:bg-gray-300 p-1 rounded-md">
         <a href="index.html">All Tasks</a>
       </li> -->
-            <li class="bg-blue-100 hover:bg-blue-200 p-2 px-4 rounded-lg transition-all duration-300 hover:scale-105">
-                <a href="others.html">Others</a>
-            </li>
-        </ul>
+        <li class="bg-blue-100 hover:bg-blue-200 p-2 px-4 rounded-lg transition-all duration-300 hover:scale-105">
+          <a href="others.html">Others</a>
+        </li>
+      </ul>
+
+      
     </section>
-        <ul id="navigation" class="flex justify-evenly items-center gap-x-7 pr-2 text-2xl font-semibold text-gray-700">
-      
-            <li>
-                <a href="https://www.youtube.com/@CyberDudeNetworks"
-                    class="nav-a hover:text-black text-gray-900 duration-300 flex items-center justify-center text-center not-md:hidden"> 
-                    Learn Technology <br>
-                    in Tamil
-            </li>
-            <li>
-                <a href="https://github.com/prakashmcodes/prakashm-js"
-                    class="nav-a hover:text-black transition-colors duration-300 flex items-center">
-                    <i data-lucide="github"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <ul id="navigation" class="flex justify-evenly items-center gap-x-7 pr-2 text-2xl font-semibold text-gray-700">
+      <button id="themeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200
+         hover:scale-110 transition-transform duration-300">
+        <i data-lucide="moon"></i>
+      </button>
 
-  <main
-    class="flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6 mt-6">
+      <li>
+        <a href="https://www.youtube.com/@CyberDudeNetworks"
+          class="nav-a hover:text-black text-gray-900 duration-300 flex items-center justify-center text-center not-md:hidden">
+          Learn Technology <br>
+          in Tamil
+      </li>
+      <li>
+        <a href="https://github.com/prakashmcodes/prakashm-js"
+          class="nav-a hover:text-black transition-colors duration-300 flex items-center">
+          <i data-lucide="github"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-    
-    <div
-      class="w-full md:w-full rounded-3xl p-18 shadow-2xl relative overflow-hidden text-black bg-[#3b82f6]">
+  <main class="flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6 mt-6">
 
-      
-      <h1
-        class="text-2xl md:text-6xl font-extrabold flex items-center gap-" id="nametext">
+
+    <div class="w-full md:w-full rounded-3xl p-18 shadow-2xl relative overflow-hidden text-black bg-[#3b82f6] dark:bg-black">
+
+
+      <h1 class="text-2xl md:text-6xl font-extrabold flex items-center gap-" id="nametext">
         I am Prakash M
       </h1>
 
@@ -84,8 +99,7 @@
     </div>
 
     <div class="w-full md:w-1/2 flex justify-center">
-      <div
-        class="relative group">
+      <div class="relative group">
         <img title="Prakash M" src="Prakash_IMG.jpg" alt="Prakash M"
           class="w-48 h-48 md:w-90 md:h-90 rounded-2xl object-cover shadow-2xl border-2 border-cyan-200 transition-transform duration-500 group-hover:scale-105" />
       </div>
@@ -96,10 +110,11 @@
 
 
   <footer class="md:absolute bottom-15 left-0 w-full flex justify-center">
-  <div class="flex items-center gap-6">
-    <a href="https://www.linkedin.com/in/prakashmcodes/"><i data-lucide="linkedin" class="w-18 h-18 hover:text-gray-600"></i></a>
-  </div>
-</footer>
+    <div class="flex items-center gap-6">
+      <a href="https://www.linkedin.com/in/prakashmcodes/"><i data-lucide="linkedin"
+          class="w-18 h-18 hover:text-gray-600"></i></a>
+    </div>
+  </footer>
 
 
   <script>
