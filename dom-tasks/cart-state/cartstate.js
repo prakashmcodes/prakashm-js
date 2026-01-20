@@ -1,36 +1,44 @@
+const cartList = document.getElementById("cartList");
 const countEl = document.getElementById("count");
-const incBtn = document.getElementById("inc");
-const decBtn = document.getElementById("dec");
-const resetBtn = document.getElementById("reset");
+const addButtons = document.querySelectorAll(".add-btn");
+const clearAllBtn = document.getElementById("clearall")
 
 let count = 0;
 
-function updateUI() {
-  countEl.textContent = count;
+addButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const productName = btn.parentElement.dataset.name;
 
-  if (count === 0) {
-    countEl.classList.add("text-red-500");
-} else {
-      countEl.classList.remove("text-red-500");
-      countEl.classList.add("text-green-500");
-  }
-}
+    const li = document.createElement("li");
+    li.className = "flex justify-between items-center bg-slate-800 px-3 py-2 rounded-lg";
 
-incBtn.addEventListener("click", () => {
-  count++;
-  updateUI();
-});
+    const span = document.createElement("span");
+    span.textContent = productName;
 
-decBtn.addEventListener("click", () => {
-  if (count > 0) {
-    count--;
-    updateUI();
-  }
-});
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "✕";
+    removeBtn.className = "text-red-400 hover:text-red-500 cursor-pointer";
 
-resetBtn.addEventListener("click", () => {
+    removeBtn.addEventListener("click", () => {
+      li.remove();
+      count--;
+    });
+
+    clearAllBtn.addEventListener("click", () => {
+  cartList.innerHTML = "";
   count = 0;
-  updateUI();
+  updateCount();
+});
+    li.appendChild(span);
+    li.appendChild(removeBtn);
+    cartList.appendChild(li);
+
+    count++;
+    updateCount();
+  });
 });
 
-updateUI(); 
+function updateCount() {
+  countEl.textContent = count;
+  countEl.className = count === 0 ? "text-red-400" : "text-green-400";
+}

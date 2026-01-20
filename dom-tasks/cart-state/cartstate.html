@@ -1,79 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./cartstate.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Text Formatter</title>
-    <script src="https://unpkg.com/lucide@latest"></script>
+  <meta charset="UTF-8">
+  <title>Mini Cart</title>
+  <link rel="stylesheet" href="cartstate.css">
 </head>
-
-<body class="min-h-screen bg-linear-to-br  from-[#220330] to-[#000000] text-white flex items-center justify-center">
+<body class="bg-slate-950 text-white ">
+    <h1 class="pl-8 text-4xl font-bold">Fruits Cart🍇</h1>
     
-    <div class="flex">
-        <a href="/dom.html">
-        <i data-lucide="arrow-left" class="absolute left-10 top-6 w-8 h-8 bg-indigo-600 rounded-full hover:text-gray-300"></i>
-    </a>
-    <a href="/">
-        <i data-lucide="home" class="absolute left-24 top-6 w-8 h-8 bg-green-600 rounded hover:text-gray-300"></i>
-    </a>
+<div class="md:flex items-start h-screen ">
+
+<div class="md:w-2/3 p-6 grid grid-cols-2 md:grid-cols-3 gap-6 overflow-y-auto ">
+    <div class="product bg-slate-800 rounded-xl p-4 text-center" data-name="Apple">
+      <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=300"
+           class="w-full h-68 object-cover rounded-lg mb-3">
+      <p class="font-semibold">Apple</p>
+      <button class="mt-2 bg-green-500 text-black px-4 py-1 rounded-lg add-btn cursor-pointer hover:bg-green-700 hover:text-gray-200">
+        Add
+      </button>
     </div>
 
-    <div
-        class="flex flex-col p-8 w-9/12 md:w-1/2 py-36 md:py-56 bg-[#24115b] rounded-2xl gap-y-6 items-center justify-center text-[#FFFFFF]">
-       <h1 
-  id="count"
-  class="text-8xl font-black 
-         drop-shadow-lg 
-         transition-colors duration-300">
-  0
-</h1>
-
-
-<div class="flex gap-x-6 items-center justify-center">
-  <button 
-    id="inc"
-    class="w-16 h-16 flex items-center justify-center 
-           text-4xl font-bold rounded-full 
-           bg-green-500 text-black 
-           shadow-lg shadow-green-500/40
-           hover:scale-110 active:scale-95 transition cursor-pointer">
-    +
-  </button>
-
-  <button 
-    id="dec"
-    class="w-16 h-16 flex items-center justify-center 
-           text-4xl font-bold rounded-full 
-           bg-red-500 text-black 
-           shadow-lg shadow-red-500/40
-           hover:scale-110 active:scale-95 transition cursor-pointer">
-    −
-  </button>
-
-  <button 
-    id="reset"
-    class="px-6 py-2 text-lg font-semibold 
-           bg-blue-400 text-black 
-           rounded-xl shadow-lg shadow-blue-400/40
-           hover:scale-105 active:scale-95 transition cursor-pointer">
-    Reset
-  </button>
-</div>
-
-
+    <div class="product bg-slate-800 rounded-xl p-3 text-center">
+      <img src="https://plus.unsplash.com/premium_photo-1724250449759-f9bbb5fd4f63?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3JhcGVzfGVufDB8fDB8fHww"
+           class="w-full h-68 object-cover rounded-lg mb-1">
+      <p class="font-semibold">Grapes</p>
+      <button class="mt-2 hover:text-gray-200 bg-green-500 text-black px-4 py-1 rounded-lg add-btn cursor-pointer hover:bg-green-700">
+        Add
+      </button>
     </div>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    <div class="product bg-slate-800 rounded-xl p-4 text-center" data-name="Orange">
+      <img src="https://images.unsplash.com/photo-1582281298055-e25b84a30b0b?w=300"
+           class="w-full rounded-lg mb-3">
+      <p class="font-semibold">WaterMelon</p>
+      <button class="mt-2 bg-green-500 text-black px-4 py-1 rounded-lg add-btn cursor-pointer hover:bg-green-200 hover:text-gray-500">
+        Add
+      </button>
+    </div>
+  </div>
+<div class="w-1/3 bg-slate-800 rounded-2xl p-6 flex flex-col m-6 ">
 
-    <script type="module" src="./cartstate.js"></script>
+    <div class="flex justify-between items-center">
+        <h2 class="text-2xl font-bold mb-4">Cart</h2>
+        <h2 id="clearall" class="text-xl font-bold mb-4 hover:bg-red-600 rounded-full p-1 cursor-pointer ">Clear All</h2>
+    </div>
+
+    <ul id="cartList" class="flex-1 space-y-2 "></ul>
+
+    <div class="border-t border-slate-700 pt-4 flex justify-between text-lg font-semibold">
+      <span>Total:</span>
+      <span id="count" class="text-green-400">0</span>
+    </div>
+  </div>
+  </div>
+
+<script src="./cartstate.js"></script>
 </body>
 
 </html>
