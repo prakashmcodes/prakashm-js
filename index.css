@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+/* 
 #nametext{
   position: relative;
   width: max-content;
@@ -31,4 +33,4 @@
 @keyframes blink{
   0%,50%{ opacity:1; }
   51%,100%{ opacity:0; }
-}
+} */

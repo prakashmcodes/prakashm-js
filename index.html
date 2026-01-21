@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  
 
-    <script>
-      tailwind = {
-        darkMode: 'class'
-      }
-    </script>
+
+  <script>
+    tailwind = {
+      darkMode: 'class'
+    }
+  </script>
   <link rel="stylesheet" href="/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,7 @@
 
 
   <nav
-    class="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-lg flex justify-between items-center px-6 border-b border-gray-200 shadow-lg z-5 rounded-xl">
+    class="fixed top-0 left-0 w-full dark:bg-slate-800 bg-white/90 backdrop-blur-lg flex justify-between items-center px-6 border-b border-gray-200 shadow-lg z-5 rounded-sm">
     <a href="/" class="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
       <img src="Prakash_IMG.jpg" class="w-8 md:w-12 md:h-12 rounded-full object-cover ring-2 ring-blue-400"
         alt="Prakash M" title="Prakash M">
@@ -48,23 +48,23 @@
         </li>
       </ul>
 
-      
+
     </section>
     <ul id="navigation" class="flex justify-evenly items-center gap-x-7 pr-2 text-2xl font-semibold text-gray-700">
-      <button id="themeToggle" class="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200
-         hover:scale-110 transition-transform duration-300">
+      <button id="themeToggle" class="p-2 rounded-lg bg-gray-800 dark:bg-gray-500 text-white dark:text-white
+         hover:scale-110 transition-transform duration-300 cursor-pointer">
         <i data-lucide="moon"></i>
       </button>
 
       <li>
         <a href="https://www.youtube.com/@CyberDudeNetworks"
-          class="nav-a hover:text-black text-gray-900 duration-300 flex items-center justify-center text-center not-md:hidden">
+          class="nav-a hover:text-black text-gray-900 duration-300 flex items-center justify-center text-center not-md:hidden dark:text-white dark:hover:text-gray-300">
           Learn Technology <br>
           in Tamil
       </li>
       <li>
         <a href="https://github.com/prakashmcodes/prakashm-js"
-          class="nav-a hover:text-black transition-colors duration-300 flex items-center">
+          class="nav-a hover:text-black transition-colors duration-300 flex items-center dark:text-white dark:hover:text-gray-300">
           <i data-lucide="github"></i>
         </a>
       </li>
@@ -74,14 +74,60 @@
   <main class="flex flex-col-reverse md:flex-row items-center justify-center gap-12 px-6 mt-6">
 
 
-    <div class="w-full md:w-full rounded-3xl p-18 shadow-2xl relative overflow-hidden text-black bg-[#3b82f6] dark:bg-black">
 
 
-      <h1 class="text-2xl md:text-6xl font-extrabold flex items-center gap-" id="nametext">
+    <div
+      class="w-full md:w-full rounded-3xl p-18 shadow-2xl relative overflow-hidden text-black bg-[#f6f8fc] dark:bg-slate-800">
+
+      <div class="mt-8 flex flex-col gap-2">
+        <h1
+          class="text-4xl font-bold text-transparent bg-linear-to-b from-gray-600 via-gray-800 to-gray-500 dark:from-gray-300 dark:via-gray-200 dark:to-primary bg-clip-text pb-5">
+          Hi, I'm Prakash M - <span class="text-secondary">A Full Stack web developer.</span>
+        </h1>
+
+        <div
+          class="mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2 text-base md:text-lg text-neutral-800 dark:text-gray-200 whitespace-pre-wrap">
+          <span>I building interactive web apps using </span>
+
+          <a target="_blank" href="#" class="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 
+             border border-dashed dark:border-white/30 border-black/20 
+             py-1 px-2 rounded-md skill-inner-shadow text-black dark:text-white">
+            <img src="html.svg" class="w-5 h-5" alt="HTML" title="html">
+            <span class="font-bold">HTML</span>
+          </a>
+          <a target="_blank" href="#" class="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 
+             border border-dashed dark:border-white/30 border-black/20 
+             py-1 px-2 rounded-md skill-inner-shadow text-black dark:text-white">
+            <img src="css.svg" class="w-5 h-5" alt="CSS" title="css">
+            <span class="font-bold">CSS</span>
+          </a>
+          <a target="_blank" href="#" class="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 
+             border border-dashed dark:border-white/30 border-black/20 
+             py-1 px-2 rounded-md skill-inner-shadow text-black dark:text-white">
+            <img src="tailwind.svg" class="w-5 h-5" alt="Tailwind CSS">
+            <span class="font-bold">Tailwind CSS</span>
+          </a>
+          <a target="_blank" href="#" class="inline-flex items-center gap-1.5 text-sm bg-black/5 dark:bg-white/15 
+             border border-dashed dark:border-white/30 border-black/20 
+             py-1 px-2 rounded-md skill-inner-shadow text-black dark:text-white">
+            <img src="js.svg" class="w-5 h-5" alt="JavaScript">
+            <span class="font-bold">JavaScript</span>
+          </a>
+
+          <!-- <b class="text-primary">UI</b> -->
+          <span>Enthusiastic about</span>
+          <b class="text-primary">MERN STACK, </b>
+          <span>driven by a keen eye for design.</span>
+        </div>
+      </div>
+
+      
+
+      <!-- <h1 class="text-2xl md:text-6xl font-extrabold text-white flex items-center gap-" id="nametext">
         I am Prakash M
-      </h1>
+      </h1> -->
 
-      <ul class="mt-6 space-y-4 text-lg font-semibold ">
+      <!-- <ul class="mt-6 space-y-4 text-lg font-semibold ">
         <li
           class="flex items-center justify-center gap-3 bg-white/80 rounded-xl px-4 py-2 backdrop-blur hover:scale-[1.02] transition-transform duration-300 ">
           <i data-lucide="globe"></i> Web Developer
@@ -94,7 +140,7 @@
           class="flex items-center justify-center gap-3 bg-white/80 rounded-xl px-4 py-2 backdrop-blur hover:scale-[1.02] transition-transform duration-300">
           <i data-lucide="cooking-pot"></i> Making More Delicious Ones
         </li>
-      </ul>
+      </ul> -->
 
     </div>
 
@@ -112,7 +158,7 @@
   <footer class="md:absolute bottom-15 left-0 w-full flex justify-center">
     <div class="flex items-center gap-6">
       <a href="https://www.linkedin.com/in/prakashmcodes/"><i data-lucide="linkedin"
-          class="w-18 h-18 hover:text-gray-600"></i></a>
+          class="w-18 h-18 dark:text-blue-500 hover:text-blue-600"></i></a>
     </div>
   </footer>
 
