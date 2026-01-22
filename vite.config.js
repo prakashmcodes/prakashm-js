@@ -19,7 +19,7 @@ export default defineConfig({
         bullerpoints: "dom-tasks/bullet-points/bulletpoints.html",
         cartstate: "dom-tasks/cart-state/cartstate.html",
         charcount: "dom-tasks/count-characters/charactercount.html",
-        charcount: "dom-tasks/faq-accordian/faq.html",
+        faq: "dom-tasks/faq-accordian/faq.html",
       },
     },
   },
