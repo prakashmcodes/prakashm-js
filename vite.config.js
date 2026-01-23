@@ -20,6 +20,8 @@ export default defineConfig({
         cartstate: "dom-tasks/cart-state/cartstate.html",
         charcount: "dom-tasks/count-characters/charactercount.html",
         faq: "dom-tasks/faq-accordian/faq.html",
+        searchlist: "dom-tasks/search-list/searchlist.html",
+        quote: "dom-tasks/quote-generator/quote.html",
       },
     },
   },
