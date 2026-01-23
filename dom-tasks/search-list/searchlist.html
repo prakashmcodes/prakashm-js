@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./searchlist.css">
+    <title>Search Likst</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-[#060f15]">
+
+    <div class="flex flex-col items-center justify-center mb-4">
+
+        <div class="flex items-center justify-between p-4 m-4 sm:w-1/2 relative">
+            <input id="input7" class="outline-2 outline-gray-700 bg-white/90 rounded p-2 px-8 md:w-full md:mx-16" placeholder="search movies" type="text">
+            <i class="text-black absolute md:mx-16" data-lucide="search"></i>
+        </div>
+
+        <ul id="movieList" 
+    class="w-full sm:w-1/2 flex flex-col gap-4 mx-auto mt-6">
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Interstellar</h3>
+        <p class="text-gray-400 text-sm">Language: English • 2014</p>
+    </li>
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Inception</h3>
+        <p class="text-gray-400 text-sm">Language: English • 2010</p>
+    </li>
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Baahubali</h3>
+        <p class="text-gray-400 text-sm">Language: Telugu • 2015</p>
+    </li>
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Vikram</h3>
+        <p class="text-gray-400 text-sm">Language: Tamil • 2022</p>
+    </li>
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Leo</h3>
+        <p class="text-gray-400 text-sm">Language: Tamil • 2023</p>
+    </li>
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Avatar</h3>
+        <p class="text-gray-400 text-sm">Language: English • 2009</p>
+    </li>
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Titanic</h3>
+        <p class="text-gray-400 text-sm">Language: English • 1997</p>
+    </li>
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Master</h3>
+        <p class="text-gray-400 text-sm">Language: Tamil • 2021</p>
+    </li>
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Jailer</h3>
+        <p class="text-gray-400 text-sm">Language: Tamil • 2023</p>
+    </li>
+
+    <li class="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-4 shadow-md hover:scale-[1.02] transition text-center">
+        <h3 class="text-lg font-semibold text-white">Avengers</h3>
+        <p class="text-gray-400 text-sm">Language: English • 2012</p>
+    </li>
+</ul>
+
+
+        <div >
+
+        </div>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script type="module" src="./searchlist.js"></script>
+</body>
+
+</html>
