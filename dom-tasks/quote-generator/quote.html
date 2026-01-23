@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Random Quote Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-[#121b15]">
+
+  <div class="flex">
+        <a href="/dom.html">
+        <i data-lucide="arrow-left" class="absolute left-10 top-6 w-8 h-8 bg-indigo-600 rounded-full hover:text-gray-300 text-white"></i>
+    </a>
+    <a href="/">
+        <i data-lucide="home" class="absolute left-24 top-6 w-8 h-8 bg-green-600 rounded hover:text-gray-300 text-white"></i>
+    </a>
+    </div>
+
+  <div class="m-4 md:w-1/2 bg-gray-600 p-8 md:p-36 rounded-lg shadow">
+    <h2 class="text-3xl font-bold text-center mb-4 text-white">Random Quote Generator</h2>
+
+    <div class="mb-4">
+      <p id="quote" class="text-2xl text-center font-bold mb-2 text-[#1ef141] shadow-2xs shadow-black">
+        Click the button to get the random quote.
+      </p>
+      <p id="author" class="text-sm font-mono text-right text-white hidden">
+       -
+      </p>
+    </div>
+
+    <button 
+      id="newQuoteBtn"
+      class="w-full py-2 border border-gray-700 rounded font-bold text-xl  bg-slate-100 hover:bg-gray-300 active:bg-slate-400">
+      New Quote
+    </button>
+  </div>
+
+  <script src="./quote.js">
+    
+  </script>
+
+  <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>
