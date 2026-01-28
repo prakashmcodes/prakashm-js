@@ -7,15 +7,32 @@ input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") findUser();
 });
 
+function extractUsername(input) {
+  input = input.trim();
+  if (input.includes("github.com")) {
+    try {
+      const url = new URL(input);
+      const parts = url.pathname.split("/").filter(Boolean);
+      return parts[0]; // username
+    } catch {
+      return input;
+    }
+  }
+
+  return input;
+}
 
 async function findUser() {
-  const username = input.value.trim();
+  let username = input.value.trim();
   const result = document.getElementById("result");
 
   if (!username) {
     showError("Please enter a username");
     return;
   }
+
+  // Extract username if full URL is given
+  username = extractUsername(username);
 
   localStorage.setItem("lastUser", username);
 
@@ -27,12 +44,10 @@ async function findUser() {
 
     const data = await res.json();
     showUser(data);
-
   } catch (error) {
     showError(error.message);
   }
 }
-
 
 window.addEventListener("DOMContentLoaded", () => {
   const lastUser = localStorage.getItem("lastUser");
@@ -42,8 +57,6 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
-
 function showError(msg) {
   document.getElementById("result").innerHTML = `
     <div class="bg-red-500/10 border border-red-500 text-red-400 p-3 rounded-lg text-center">
@@ -51,7 +64,6 @@ function showError(msg) {
     </div>
   `;
 }
-
 
 function showUser(data) {
   const result = document.getElementById("result");
@@ -100,10 +112,13 @@ function showUser(data) {
         </div>
       </div>
 
-      <a href="${data.html_url}" target="_blank"
-        class="block text-center mt-4 bg-green-500 text-black font-semibold py-2 rounded-lg hover:bg-green-600 transition">
-        View Profile
-      </a>
+     <a href="${data.html_url}" target="_blank"
+  class="flex items-center justify-center gap-2 mt-4 bg-green-500 text-black font-semibold py-2 rounded-lg hover:bg-green-600 transition">
+  <i data-lucide="github" class="w-5 h-5"></i>
+  <span>View Profile</span>
+</a>
+
+
 
       <p class="text-sm text-gray-400 mt-6 text-right">
         Joined ${new Date(data.created_at).toDateString()}
@@ -113,10 +128,11 @@ function showUser(data) {
   `;
 
   
+  
   document.getElementById("closeBtn").addEventListener("click", () => {
     result.innerHTML = "";
     input.value = "";
-    localStorage.removeItem("lastUser"); 
+    localStorage.removeItem("lastUser");
   });
+  lucide.createIcons();
 }
-
