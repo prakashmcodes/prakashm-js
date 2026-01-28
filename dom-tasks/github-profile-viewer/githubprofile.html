@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./githubprofile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    rel="stylesheet">
+  <title>Github User Finder</title>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="min-h-screen bg-linear-to-br from-slate-200 to-white ">
+
+  <div class="flex">
+    <a href="/dom.html">
+      <i data-lucide="arrow-left"
+        class="absolute text-white left-10 top-6 w-8 h-8 bg-indigo-600 rounded-full hover:text-gray-300"></i>
+    </a>
+    <a href="/">
+      <i data-lucide="home"
+        class="absolute text-white left-24 top-6 w-8 h-8 bg-green-600 rounded hover:text-gray-300"></i>
+    </a>
+  </div>
+
+
+  <div class="flex justify-center p-4">
+    <div class="not-md:w-full w-2/4 bg-gray-800 rounded-2xl shadow-xl p-6">
+      <h1 class="text-white text-2xl font-bold text-center mb-6">
+        GitHub User Finder
+      </h1>
+
+      <div class="flex flex-col items-center justify-center  md:flex-row gap-2">
+        <input id="username" type="text" placeholder="Enter GitHub username"
+          class="flex-1 w-full px-4 py-2 rounded-lg bg-gray-700 text-white outline-none focus:ring focus:ring-green-500" />
+        <button id="searchBtn"
+          class="w-fit cursor-pointer bg-green-500 hover:bg-green-600 text-black px-4 py-2 rounded-lg font-semibold">
+          Search
+        </button>
+      </div>
+
+      <div id="result" class="mt-6"></div>
+    </div>
+  </div>
+
+
+  <script>
+    lucide.createIcons();
+  </script>
+  <script type="module" src="./githubprofile.js"></script>
+</body>
+
+</html>
