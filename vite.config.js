@@ -22,7 +22,7 @@ export default defineConfig({
         faq: "dom-tasks/faq-accordian/faq.html",
         searchlist: "dom-tasks/search-list/searchlist.html",
         quote: "dom-tasks/quote-generator/quote.html",
-        githubprofile: "dom-tasks/github-profile-viewer/githubprofile.hmtl",
+        githubprofile: "dom-tasks/github-profile-viewer/githubprofile.html",
       },
     },
   },
