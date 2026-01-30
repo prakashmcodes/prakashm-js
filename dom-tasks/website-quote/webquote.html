@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Quote Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./webquote.css">
+
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-300 text-white flex items-center justify-center p-4">
+
+  <form class="w-full max-w-6xl bg-slate-800 rounded-xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2" id="myform" action="#">
+
+    <div class="p-6 space-y-12">
+      <h1 class="text-4xl font-bold text-center">Website Quote Generator</h1>
+
+      <div>
+        <label class="block mb-2 text-xl font-semibold">Website Type</label>
+        <select id="webtype" class="w-full p-2 rounded bg-white text-gray-800 cursor-pointer" required>
+          <option value="">Choose Type</option>
+          <option class="cursor-pointer" value="ecommerce">E-Commerce</option>
+          <option class="cursor-pointer" value="saas">SaaS</option>
+          <option class="cursor-pointer" value="portfolio">Portfolio</option>
+        </select>
+      </div>
+
+      <div>
+        <p class="mb-2 text-xl font-semibold">Number of Pages</p>
+        <div class="flex flex-wrap gap-3">
+          <label class="flex items-center gap-1">
+            <input class="w-5 h-5 cursor-pointer" type="radio" name="pages" value="4" required> 4
+          </label>
+          <label class="flex items-center gap-1">
+            <input class="w-5 h-5 cursor-pointer" type="radio" name="pages" value="8"> 8
+          </label>
+          <label class="flex items-center gap-1">
+            <input class="w-5 h-5 cursor-pointer" type="radio" name="pages" value="12"> 12
+          </label>
+          <label  class="flex items-center gap-1">
+            <input class="w-5 h-5 cursor-pointer" type="radio" name="pages" value="20"> 20
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <p class="mb-2 text-xl">Extra Features</p>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" id="seo">
+          SEO Optimization
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" id="payment">
+          Payment Gateway
+        </label>
+        <label class="flex items-center gap-2">
+          <input type="checkbox" id="admin">
+          Admin Panel
+        </label>
+      </div>
+
+
+      <div class="flex items-center justify-center">
+        <button type="button" id="resetBtn"
+        class="w-1/4 cursor-pointer bg-red-600 hover:bg-red-700 py-2 rounded font-semibold">
+        Reset
+      </button>
+      </div>
+    </div>
+
+  
+    <div class="p-6 bg-slate-900 space-y-4">
+      <h2 class="text-2xl font-semibold">Quotation</h2>
+
+      <div id="breakdown" class="text-xl leading-relaxed text-gray-300">
+        Select options to generate quote.
+      </div>
+
+      <div class="border-t flex items-center justify-center pt-4 text-lg font-bold">
+        Total: ₹<span id="total">0</span>
+      </div>
+      <button type="submit" id="checkoutbtn"
+        class="w-full cursor-pointer hidden bg-green-600 hover:bg-green-700 py-2 rounded font-semibold">
+        Checkout
+      </button>
+    </div>
+
+  </form>
+
+ <script type="module" src="./webquote.js"></script>
+
+</body>
+</html>

@@ -23,6 +23,7 @@ export default defineConfig({
         searchlist: "dom-tasks/search-list/searchlist.html",
         quote: "dom-tasks/quote-generator/quote.html",
         githubprofile: "dom-tasks/github-profile-viewer/githubprofile.html",
+        websitequote: "dom-tasks/website-quote/webquote.html",
       },
     },
   },
