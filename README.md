@@ -20,7 +20,6 @@ https://prakashm-js.vercel.app/
 - HTML-based Routing
 - Debugging & Problem Solving
 - UX-focused UI improvements
-
 ---
 
 ## 📂 Tasks List
